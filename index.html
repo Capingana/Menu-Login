@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title>Menu e Login Responsivo</title>
+</head>
+
+<body onresize="onresize()">
+    <header class="header-page">
+        <div class="logo">
+            <img src="./src/img/logo.png" alt="logo">
+        </div>
+        <div class="menu">
+            <img src="./src/img/menu.png" alt="menu" id="hamburguer">
+        </div>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </menu>
+    </header>
+    <!-- main -->
+
+    <main>
+        <section class="login">
+            <div class="headerLoginFoto">
+            </div>
+            <div class="LoginFormulario">
+                <h1>Logar</h1>
+                <p>Seja bem-vindo(a) e faça seu login para realizar as configurações no sistema.</p>
+
+                <form action="#" method="post">
+                    <div class="campos">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="campos">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Sua senha">
+                    </div>
+                    <div class="campos">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <a href="#">Esqueci a senha</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- end main -->
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

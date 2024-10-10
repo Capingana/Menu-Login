@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body,
+html {
+  box-sizing: border-box;
+  /* width: 100vw;
+  height: 100vh; */
+  background-image: url("../img/te_03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+header.header-page {
+  display: block;
+  text-align: center;
+  background-color: rgba(31, 31, 31, 0.363);
+}
+
+.menu {
+  background-color: rgba(0, 255, 255, 0.822);
+}
+.menu:hover {
+  background-color: rgb(0, 255, 255);
+}
+header .menu > img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#itens {
+  display: none;
+}
+#itens > ul > li > a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  border-top: 1px solid teal;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 1s;
+}
+#itens > ul > li > a:hover {
+  background-color: rgb(0, 255, 255);
+  color: black;
+  transform: translate(-2px);
+}
+
+/* ========================================================== */
+/* login container */
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+section.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.342);
+}
+
+.headerLoginFoto {
+  background: black url("../img/teclado.jpg") no-repeat;
+  background-position: center top;
+  height: 250px;
+  background-size: cover;
+  display: block;
+}
+
+.LoginFormulario {
+  display: block;
+  padding: 10px;
+}
+.LoginFormulario > h1 {
+  text-align: center;
+  color: teal;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.LoginFormulario > p {
+  text-align: left;
+}
+
+form > .campos {
+  margin: 15px 0px;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: teal;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+label{
+    display: none;
+}
+form input{
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 10px 0px;
+}
+form a{
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+    margin: 5px 0px;
+    display: block;
+    text-decoration: none;
+}
+form a:hover{
+    background-color: teal;
+    color: white;
+}
+/* ========================================================== */
+/* Aplicando media queries */
+@media screen and (min-width: 768px) {
+  #itens {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+
+  #itens > ul > li {
+    display: inline-block;
+    background-color: teal;
+  }
+}
